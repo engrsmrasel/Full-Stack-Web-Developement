@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid Assignment</title>
+</head>
+<body>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container{
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .blog-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        
+        }
+
+        .post img{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .blog{
+            padding: 100px 0;
+        }
+
+        .post{
+            border: 2px solid gray;
+            padding: 20px;
+        }
+
+        .blog-container{
+            display: grid;
+            gap: 40px;
+            grid-template-columns: 3fr 1fr;
+            padding: 20px;
+        }
+
+        .sidebar-post1{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar-post{
+            display: flex;
+            gap: 20px;
+        }
+        .sidebar-post-btn{
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .sidebar-post-image{
+            max-width: 140px;
+            height: 90px;
+            object-fit: cover;
+        }
+
+        .sidebar-post-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @media(max-width:1000px)
+        {
+            .blog-container
+            {
+                grid-template-columns: 1fr;
+
+            }
+        }
+
+        
+        @media(max-width:560px)
+        {
+            .blog-grid
+            {
+                grid-template-columns: 1fr;
+
+            }
+        }
+
+        .div1-wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: #3C7D36;
+            padding: 20px;
+            /* justify-content: center */
+            /* padding-left: 120px; */
+            margin-top: -50px;
+            justify-items: center;
+        }
+
+        .footer-wrapper{
+            background-color: black;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .header-wrapper{
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .wrapper-right{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
+
+        .wrapper-left{
+            padding-left: 50px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .wrapper-right{
+            padding-right: 70px;
+        }
+
+        .span{
+        color: #3C7D36;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: #3A3A3A;
+
+            font-size: 18px;
+            font-weight: 700;
+
+        }
+
+        .image-wrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            /* margin-bottom: -50px; */
+        }
+
+        .green-box{
+            background-color: #3C7D36;
+            height: 400px;
+            /* background-color: #3C7D36; */
+
+        }
+
+        .cover-image{
+            width: 900px;
+            height: 400px;
+        }
+
+        .food-profile-text{
+            background-color: white;
+            width: 520px;
+            height: 70px;
+            transform: translate(520px, -250px);
+            padding: 20px;
+
+
+        }
+
+        .blog{
+            margin-top: -150px;
+        }
+
+     </style>
+
+    <main>
+
+        <section class="header">
+            <div class="header-wrapper">
+                <div class="wrapper-left">
+                    <h3>Yummy <span class="span">Blog</span></h3>
+                </div>
+
+                <div class="wrapper-right">
+                    <div class="right">
+                        <a href="#">Home</a>
+                    </div>
+
+                    <div class="right">
+                        <a href="#">About</a>
+                    </div>
+
+                    <div class="right">
+                        <a href="#">Blog</a>
+                    </div>
+
+                    <div class="right">
+                        <a href="#">Contact</a>
+                    </div>
+               
+                </div>
+
+            </div>
+        </section>
+
+        <div class="food-profile">
+            <div class="food-profile-wrapper">
+                <div class="image-wrapper">
+
+                    <div>
+                        <img class="cover-image" src="Food-cover.png" alt="food food-profile">
+
+                    </div>
+
+                    <div class="green-box">
+
+                        <!-- <p>green box</p> -->
+
+                    </div>
+
+                </div>
+
+                <div class="food-profile-text">
+                    <p>Date : 16/09/2021</p>
+                    <h2>19 THANKSGIVING MENU IDEAS FOR BETTER FOOD</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="blog">
+            <div class="container blog-container">
+                <div class="blog-posts">
+                    <!-- <h2>Blogs</h2> -->
+                    <div class="blog-grid">
+                        <div class="post">
+                            <img src="food1.png" alt="">
+                            <p>Date : 24/10/2023</p>
+                            <h3 class="post-title">
+                                19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                            </h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, vel placeat error eum inventore unde delectus, cum, soluta quibusdam ad repellat velit.
+                            <p></p>
+
+                        </div>
+
+                        <div class="post">
+                            <img src="food1.png" alt="">
+                            <p>Date : 24/10/2023</p>
+                            <h3 class="post-title">
+                                19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                            </h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, vel placeat error eum inventore unde delectus, cum, soluta quibusdam ad repellat velit.
+                            <p></p>
+
+                        </div>
+
+                        <div class="post">
+                            <img src="food1.png" alt="">
+                            <p>Date : 24/10/2023</p>
+                            <h3 class="post-title">
+                                19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                            </h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, vel placeat error eum inventore unde delectus, cum, soluta quibusdam ad repellat velit.
+                            <p></p>
+
+                        </div>
+
+                        <div class="post">
+                            <img src="food1.png" alt="">
+                            <p>Date : 24/10/2023</p>
+                            <h3 class="post-title">
+                                19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                            </h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, vel placeat error eum inventore unde delectus, cum, soluta quibusdam ad repellat velit.
+                            <p></p>
+
+                        </div>
+
+                        <div class="post">
+                            <img src="food1.png" alt="">
+                            <p>Date : 24/10/2023</p>
+                            <h3 class="post-title">
+                                19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                            </h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, vel placeat error eum inventore unde delectus, cum, soluta quibusdam ad repellat velit.
+                            <p></p>
+
+                        </div>
+
+                        <div class="post">
+                            <img src="food1.png" alt="">
+                            <p>Date : 24/10/2023</p>
+                            <h3 class="post-title">
+                                19 THANKSGIVING MENU IDEAS FOR BETTER FOOD
+                            </h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, vel placeat error eum inventore unde delectus, cum, soluta quibusdam ad repellat velit.
+                            <p></p>
+
+                        </div>
+                    
+
+                    </div>
+
+                </div>
+                <aside>
+                    <!-- <h2>Sidebar</h2> -->
+
+                    <div class="sidebar-post1">
+                        <div class="sidebar-post">
+                            <img src="sidebar-img1.png" alt="" class="sidebar-post-image">
+                            <div class="sidebar-post-content">
+                                <div class="sidebar-post-title">
+                                    Lorem ipsum dolor sit amet.
+
+                                </div>
+                                <a  class="sidebar-post-btn">Read More</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sidebar-post">
+                            <img src="sidebar-img1.png" alt="" class="sidebar-post-image">
+                            <div class="sidebar-post-content">
+                                <div class="sidebar-post-title">
+                                    Lorem ipsum dolor sit amet.
+
+                                </div>
+                                <a  class="sidebar-post-btn">Read More</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sidebar-post">
+                            <img src="sidebar-img1.png" alt="" class="sidebar-post-image">
+                            <div class="sidebar-post-content">
+                                <div class="sidebar-post-title">
+                                    Lorem ipsum dolor sit amet.
+
+                                </div>
+                                <a  class="sidebar-post-btn">Read More</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sidebar-post">
+                            <img src="sidebar-img1.png" alt="" class="sidebar-post-image">
+                            <div class="sidebar-post-content">
+                                <div class="sidebar-post-title">
+                                    Lorem ipsum dolor sit amet.
+
+                                </div>
+                                <a  class="sidebar-post-btn">Read More</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sidebar-post">
+                            <img src="sidebar-img1.png" alt="" class="sidebar-post-image">
+                            <div class="sidebar-post-content">
+                                <div class="sidebar-post-title">
+                                    Lorem ipsum dolor sit amet.
+
+                                </div>
+                                <a  class="sidebar-post-btn">Read More</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sidebar-post">
+                            <img src="sidebar-img1.png" alt="" class="sidebar-post-image">
+                            <div class="sidebar-post-content">
+                                <div class="sidebar-post-title">
+                                    Lorem ipsum dolor sit amet.
+
+                                </div>
+                                <a  class="sidebar-post-btn">Read More</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sidebar-post">
+                            <img src="sidebar-img1.png" alt="" class="sidebar-post-image">
+                            <div class="sidebar-post-content">
+                                <div class="sidebar-post-title">
+                                    Lorem ipsum dolor sit amet.
+
+                                </div>
+                                <a  class="sidebar-post-btn">Read More</a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sidebar-post">
+                            <img src="sidebar-img1.png" alt="" class="sidebar-post-image">
+                            <div class="sidebar-post-content">
+                                <div class="sidebar-post-title">
+                                    Lorem ipsum dolor sit amet.
+
+                                </div>
+                                <a  class="sidebar-post-btn">Read More</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <div class="div1">
+            <div class="div1-wrapper">
+                <div class="div1a">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br>
+                </div>
+
+                <div class="div1a">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br>
+                </div>
+
+                <div class="div1a">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br>
+                </div>
+
+                <div class="div1a">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="footer">
+            <div class="footer-wrapper">
+                <p>All rights reserved by Yummy Blog</p>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+    
+</body>
+</html>

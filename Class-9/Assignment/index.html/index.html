@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform & Transition</title>
+</head>
+<body>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            gap: 3rem;
+            margin: auto;
+            max-width: 1140px;
+            background-color: aqua;
+            height: 500px;
+            align-items: center;
+    
+        }
+
+        .box{
+            border: 3px solid yellow;
+            padding: 1rem;
+            transition: transform 1s,background-color 1.5s,color 1s linear;
+         }
+
+        .box:nth-child(odd){
+            background-color: brown;    
+
+        }
+
+        .box:nth-child(even){
+            background-color: black;
+            color: white;  
+            animation-name: colorchange;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+
+
+
+
+        }
+
+        .box:hover{
+            transform: rotate(30deg);
+            background-color: green;
+            color: blue;
+        }
+
+        @keyframes colorchange{
+
+            0%{
+                background-color: red;
+
+            }
+
+            25%{
+                background-color: blueviolet;
+            }
+
+            50%{
+
+                background-color: blue;
+            }
+
+            75%{
+                background-color: chartreuse;
+                
+            }
+
+        }
+
+    </style>
+
+    <section class="container">
+
+        <div class="box">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, soluta!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quas natus incidunt dolores sed praesentium doloremque quos laudantium dicta vero.</p>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div class="box">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, soluta!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quas natus incidunt dolores sed praesentium doloremque quos laudantium dicta vero.</p>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div class="box">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, soluta!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quas natus incidunt dolores sed praesentium doloremque quos laudantium dicta vero.</p>
+            <a href="#">Learn More</a>
+        </div>
+
+        
+
+    </section>
+    
+</body>
+</html>

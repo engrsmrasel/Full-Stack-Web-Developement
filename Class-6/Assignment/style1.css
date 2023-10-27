@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,900&family=Roboto+Slab:wght@200;400;500;700;800&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;   
+    margin: 50px 140px;
+
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.header1
+{
+
+padding: 10px;
+width: 2200px;
+/* background-color: aqua; */
+}
+
+.container
+{
+    /* background-color: brown; */
+    max-width: 95%;
+    margin: auto;
+
+}
+
+.div1{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul
+{
+display: flex;
+flex-direction: row;
+gap: 29px;
+
+}
+
+.logo{
+
+color: #385F96;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 135.5%; /* 65.04px */
+letter-spacing: 0.24px;
+}
+
+nav ul li a{
+
+    color: #385F96;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 135.5%; /* 27.1px */
+letter-spacing: 0.1px;
+}
+
+.btn{
+
+color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+border-radius: 30px;
+background: #385F96;
+
+display: inline-block;
+padding: 14px 41px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.sec1{
+    display: flex;
+    align-items: center;
+    gap: 268px;
+    padding: 20px;
+
+}
+
+.div2 h2{
+    width: 502px;
+    color: #385F96;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 135.5%; /* 65.04px */
+letter-spacing: 0.24px;
+
+}
+
+.div2 p1{
+    width: 478px;
+    color: #4E4E4E;
+text-align: justify;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+
+}
+
+.image6
+{
+
+width: 412px;
+height: 459.784px;
+flex-shrink: 0;
+
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+
+/* section 2 start */
+
+.sec2{
+    display: flex;
+    align-items: center;
+    gap: 166px;
+    padding: 20px;
+
+}
+
+
+/* .div3{
+    flex-shrink: 0;
+} */
+
+.div3 h2{
+    width: 526px;
+    color: #385F96;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135.5%; /* 48.78px */
+    letter-spacing: 0.18px;
+
+}
+
+.div3 p2{
+    width: 493px;
+    color: #4E4E4E;
+text-align: justify;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.image7
+{
+width: 477px;
+height: 436px;
+flex-shrink: 0;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+margin-left: 130px;
+}
+
+
+
+/* section 2 end */
+
+
+/* section 3 start */
+
+    
+.sec3{
+
+    width: 2200px;
+    height: 614px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 700px;
+
+    background-image: url(Rectangle\ 10.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    padding: 80px 0;
+    /* margin-left: 200px; */
+    
+
+
+}
+
+.div4{
+
+    margin-left: 200px;
+}
+
+.div4 h2{
+    width: 466px;
+    color: #385F96;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135.5%; /* 48.78px */
+    letter-spacing: 0.18px;
+
+}
+
+
+
+.image8
+{
+    width: 472px;
+    height: 391px;
+    flex-shrink: 0;
+    /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+}
+
+
+
+/* section 3 end */
+
+/* footer sec start */
+
+footer {
+
+    /* width: 234.511px; */
+    color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+background: #385F96;
+width: 2200px;
+height: 75px;
+flex-shrink: 0;
+max-width: 90%;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 95px;
+/* display: inline-block; */
+
+}
+
+/* footer section end */
+
+

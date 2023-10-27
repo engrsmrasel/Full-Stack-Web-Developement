@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+<style>
+    .container{
+        max-width: 700px;
+        height: 700px;
+        margin: auto;
+        background-color: aqua;
+        
+    position: relative;
+
+    }
+    .Brown-box{
+        width: 120px;
+        height: 120px;
+        background-color: brown;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        z-index: 2;
+
+    }
+
+    .Blue-box{
+        width: 120px;
+        height: 120px;
+        background-color: blue;
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        z-index: 1;
+    }
+
+    .Yellow-box{
+        width: 120px;
+        height: 120px;
+        background-color: yellow;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        z-index: 5;
+    }
+
+    .White-box{
+        width: 120px;
+        height: 120px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        z-index: 7;
+    }
+
+    .Yellow2-box{
+        width: 120px;
+        height: 120px;
+        background-color: yellow;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        /* z-index: 5; */
+    }
+
+    .White2-box{
+        width: 120px;
+        height: 120px;
+        background-color: white;
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        /* z-index: 7; */
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="Brown-box">box</div>
+        <div class="Blue-box">box</div>
+        <div class="Yellow-box">box</div>
+        <div class=" White-box">box</div>
+        <div class="Yellow2-box">box</div>
+        <div class=" White2-box">box</div>
+
+    </div>
+</body>
+</html>

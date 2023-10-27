@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudu Class</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+
+</head>
+<body>
+
+        
+
+    <style>
+
+        /* unvisited link */
+        a:link {
+        color: #FF0000;
+        }
+
+        /* visited link */
+        a:visited {
+        color: #e417b0;
+        }
+
+        a:hover{
+            color: rgb(76, 43, 226);
+
+    
+        }
+
+        /* p:hover{
+
+            font-size: 200%;
+            color: yellow;
+            cursor: pointer;
+        } */
+
+        /* li:first-child{
+
+            color: #FF0000;
+        }
+
+       li:last-child{
+            color: rgb(187, 235, 17);
+            list-style: none;
+        } */
+
+        li:nth-child(even){
+            color: blue;
+        }
+
+        li:nth-child(even){
+            color: rgb(255, 0, 43);
+        }
+
+
+        .flex-container{
+
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+        }
+
+        .box{
+           width: 200px; 
+        }
+
+        .box:nth-child(even){
+            background-color: aqua;
+            padding: 20px;
+        }
+
+        .box:nth-child(odd){
+            background-color: yellowgreen;
+            padding: 30px;
+        }
+
+
+        p::first-letter{
+            font-size: 200%;
+            color: #FF0000;
+        }
+
+        h2::first-line{
+            color: crimson;
+
+        }
+
+        ::selection{
+            background-color: #e417b0;
+            color: whiteS;
+        }
+
+
+
+    </style>
+
+
+    <div>
+
+        <ul>
+            <li>Apple</li>
+            <li>coconut</li>
+            <li>Orange</li>
+            <li>Banana</li>
+            
+        </ul>
+
+        <div class="flex-container">
+
+            <div class="box">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, suscipit!</h2>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo aut obcaecati unde iste modi dolor laudantium aliquam dolore, qui vitae officiis possimus sint omnis quis ipsam quam rerum hic!</p>
+                <a href="https://blog.hubspot.com/marketing/best-website-designs-list">Learn More</a>
+            </div>
+    
+            <div class="box">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, suscipit!</h2>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo aut obcaecati unde iste modi dolor laudantium aliquam dolore, qui vitae officiis possimus sint omnis quis ipsam quam rerum hic!</p>
+                <a href="https://blog.hubspot.com/marketing/best-website-designs-list">Learn More</a>
+            </div>
+    
+            <div class="box">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, suscipit!</h2>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo aut obcaecati unde iste modi dolor laudantium aliquam dolore, qui vitae officiis possimus sint omnis quis ipsam quam rerum hic!</p>
+                <a href="https://blog.hubspot.com/marketing/best-website-designs-list">Learn More</a>
+            </div>
+    
+            <div class="box">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, suscipit!</h2>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo aut obcaecati unde iste modi dolor laudantium aliquam dolore, qui vitae officiis possimus sint omnis quis ipsam quam rerum hic!</p>
+                <a href="https://blog.hubspot.com/marketing/best-website-designs-list">Learn More</a>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    
+</body>
+</html>
